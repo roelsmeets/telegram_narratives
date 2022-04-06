@@ -325,10 +325,10 @@ def overwrite_doc(cleanests_post):
 
 
 
-for filename in os.listdir('/Users/roelsmeets/desktop/telegram_narratives/complot/Telegram_data_to_do'):
+for filename in os.listdir('/home/rjhsmeets/telegram_narratives/complot/Telegram_data_to_do'):
     if filename.endswith('.csv'):
         print ('computing NLP for:', filename)
-        with open(os.path.join('/Users/roelsmeets/desktop/telegram_narratives/complot/Telegram_data_to_do', filename), encoding='latin-1') as csvfile:
+        with open(os.path.join('/home/rjhsmeets/telegram_narratives/complot/Telegram_data_to_do', filename), encoding='latin-1') as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
 
             next(reader, None) # Skip first row (= header) of the csv file
